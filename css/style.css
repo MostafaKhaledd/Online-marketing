@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.layer{
+    position: absolute;
+    bottom: -50%;
+    right: 15px;
+    left: 15px;
+    text-align: center;
+    background-color: #fff;
+    transition: bottom 1s;
+}
+.item:hover .layer{
+    bottom: 15px;
+}
+#boxcontainer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.innerbox{
+width: 37%;
+height: 500px;
+background-image: url(../portfolio/4.jpg);
+}
+.innerbox i{
+    cursor: pointer;
+}
